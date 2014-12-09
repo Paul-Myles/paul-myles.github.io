@@ -6,7 +6,7 @@
 });*/
 
 // Executes fadeOut if user fails to click landing page
-$("#bl-landing").delay(3200).fadeOut("slow");
+$("#bl-landing").delay(3400).fadeOut("slow");
 
 // Landing text fade in
 $( ".fade-h1").hide(0).delay(500).fadeIn(850)
