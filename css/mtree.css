@@ -33,14 +33,17 @@ ul.mtree.bubba ul li {
   background-color: #46166b;
 }
 ul.mtree.bubba li.mtree-node > a:after {
-  content: '›';
+  /*content: '›';
   margin-left: .5em;
-  font-weight: normal;
+  font-weight: normal;*/
 }
 ul.mtree.bubba li.mtree-node > a {
   font-weight: bold;
   text-transform: upperCase;
   text-align: center;
+}
+ul.mtree.bubba li.mtree-node > a img {
+  margin: 0 auto;
 }
 ul.mtree.bubba > li {
   border-bottom: 1px solid #E9E9E9;
