@@ -30,6 +30,7 @@ ul.mtree.bubba ul {
 }
 ul.mtree.bubba ul li {
   font-size: .9em;
+  background-color: #46166b;
 }
 ul.mtree.bubba li.mtree-node > a:after {
   content: '›';
@@ -42,7 +43,7 @@ ul.mtree.bubba li.mtree-node > a {
   text-align: center;
 }
 ul.mtree.bubba > li {
-  border-bottom: 1px solid #DDD;
+  border-bottom: 1px solid #E9E9E9;
 }
 ul.mtree.bubba > li:last-child {
   border-bottom: none;
@@ -54,7 +55,7 @@ ul.mtree.bubba > li.mtree-open > a {
   background: #DDD;
 }
 ul.mtree.bubba li > a:hover {
-  background: #DDD;
+  background: #F6B82B;
 }
 ul.mtree.bubba li.mtree-active > a {
   background: #FFC000;

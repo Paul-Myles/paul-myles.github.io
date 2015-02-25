@@ -76,7 +76,7 @@ img, .youtube {
 
 /* STYLES */
 .mtree-wrap .mtree {
-    background: #EEE;
+    background: #F7F7F7;
     margin: 20px auto;
     max-width: 100%;
     border-radius: 3px;
@@ -88,7 +88,7 @@ ul.mtree.bubba ul{
 
 /* CHANGE ME */
     ul.mtree.bubba a{
-    padding: 7px 0.5em!important;
+    /*padding: 7px 0.5em!important;*/
 }
 
 .next-submit{
@@ -110,7 +110,11 @@ ul.mtree.bubba ul{
 #hero-bg{
     background:url('../img/hero_1.jpg') no-repeat top center;
     background-size: 100% auto;
-    height: 30em;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+    background-size: cover;
+    height: 800px;
 }
 
 .full-width{
@@ -118,7 +122,7 @@ ul.mtree.bubba ul{
 }
 
 .vcenter {
-	height: 100%;
+	/*height: 100%;*/
 }
 
 .vcenter img{
@@ -128,6 +132,38 @@ ul.mtree.bubba ul{
 .ellipse-x p{
 	text-align: center;
 	margin: 10px 0!important;
+}
+
+.question-padding {
+    padding: 3em 0 2em 0;
+}
+
+.outer {
+    display: table;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.middle {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.inner {
+    margin-left: auto;
+    margin-right: auto; 
+    width: /*whatever width you want*/;
+}
+
+.banger {
+    width: 100%;
+    background-color: #F6B82B;
+    padding: 0!important;
+}
+
+.accordin-padding {
+    padding-bottom: 50px;
 }
 
 /*
