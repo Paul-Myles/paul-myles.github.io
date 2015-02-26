@@ -19,9 +19,6 @@
     <link href="css/mtree.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 
-    <!-- Custom Modernizr -->
-    <script src="js/modernizr.custom.26633.js"></script>
-
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -45,46 +42,6 @@
 
     </div>
 
-    <!-- <section class="main" style="display:none;">
-        
-        <div id="ri-grid" class="ri-grid ri-grid-size-3">
-            
-            <img class="ri-loading-image" src="img/loading.gif"/>
-                
-                <ul>
-                    
-                    <li><a href="#"><img src="img/photos/aims_1.jpg"/></a></li>
-                    <li><a href="#"><img src="img/photos/aims_2.jpg"/></a></li>
-                    <li><a href="#"><img src="img/photos/aims_3.jpg"/></a></li>
-                    <li><a href="#"><img src="img/photos/jono_1.jpg"/></a></li>
-                    <li><a href="#"><img src="img/photos/jono_2.jpg"/></a></li>
-                    <li><a href="#"><img src="img/photos/jono_3.jpg"/></a></li>
-                    <li><a href="#"><img src="img/photos/jono_4.jpg"/></a></li>
-                    <li><a href="#"><img src="img/photos/jp_1.jpg"/></a></li>
-                    <li><a href="#"><img src="img/photos/jp_2.jpg"/></a></li>
-                    <li><a href="#"><img src="img/photos/jp_3.jpg"/></a></li>
-                    <li><a href="#"><img src="img/photos/mus_1.jpg"/></a></li>
-                    <li><a href="#"><img src="img/photos/mus_2.jpg"/></a></li>
-                    <li><a href="#"><img src="img/photos/mus_3.jpg"/></a></li>
-                    <li><a href="#"><img src="img/photos/nic_1.jpg"/></a></li>
-                    <li><a href="#"><img src="img/photos/nic_2.jpg"/></a></li>
-                    <li><a href="#"><img src="img/photos/nic_3.jpg"/></a></li>
-                    <li><a href="#"><img src="img/photos/nicky_1.jpg"/></a></li>
-                    <li><a href="#"><img src="img/photos/nicky_2.jpg"/></a></li>
-                    <li><a href="#"><img src="img/photos/nicky_3.jpg"/></a></li>
-                    <li><a href="#"><img src="img/photos/tim_1.jpg"/></a></li>
-                    <li><a href="#"><img src="img/photos/tim_2.jpg"/></a></li>
-                    <li><a href="#"><img src="img/photos/tim_3.jpg"/></a></li>
-                    <li><a href="#"><img src="img/photos/tom_1.jpg"/></a></li>
-                    <li><a href="#"><img src="img/photos/tom_2.jpg"/></a></li>
-                    <li><a href="#"><img src="img/photos/tom_3.jpg"/></a></li>
-
-                </ul>
-
-            </div>
-
-    </section>
- -->
     <!-- Page Content -->
     <div class="container">
 
@@ -399,9 +356,18 @@
             <!-- </div> --><!-- end ORIGINAL container -->
         </div>
 
+        <!-- Footer -->
+        <footer>
+            <!--<div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; Your Website 2014</p>
+                </div>
+            </div>-->
+            <!-- /.row -->
+        </footer>
+
     <!-- </div> -->
     <!-- /.container -->
-
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
@@ -412,7 +378,6 @@
     <!-- mtree js -->
     <script src='http://cdnjs.cloudflare.com/ajax/libs/velocity/0.2.1/jquery.velocity.min.js'></script>
     <script src="js/mtree.js"></script>
-    <script src="js/jquery.gridrotator.js"></script>
     <script type="text/javascript">
         $(function(){
             $('#b2').click(function(){
@@ -433,6 +398,12 @@
             $('#b5').click(function(){
                 $('#q5').click();
             });
+        });
+
+
+        $("input:radio[class=radioBtnClass]").click(function() {
+            var value = $(this).val();
+            console.log(value)
         });
 
         var $total_score = 0;
@@ -459,8 +430,6 @@
 
         });
 
-
-       
 
     </script>
 
