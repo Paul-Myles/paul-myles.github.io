@@ -120,6 +120,9 @@ ul.mtree.bubba ul{
 .full-width{
 	width: 100%!important;
 }
+.full-width2{
+    width: 1480px;
+}
 
 .vcenter {
 	/*height: 100%;*/
