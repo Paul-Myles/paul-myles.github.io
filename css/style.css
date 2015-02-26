@@ -204,6 +204,7 @@ ul.mtree.bubba ul{
     width: 140px;
     color: #FFF;
     text-transform: uppercase;
+    font-family: 'gt-walsheim';
 }
 
 .btn-results button:hover {
@@ -223,6 +224,7 @@ ul.mtree.bubba ul{
     width: 140px;
     color: #FFF;
     text-transform: uppercase;
+    font-family: 'gt-walsheim';
 }
 
 .btn-Next button:hover {
@@ -273,7 +275,7 @@ label > input + img{ /* IMAGE STYLES */
   border:2px solid transparent;
 }
 label > input:checked + img{ /* (RADIO CHECKED) IMAGE STYLES */
-  border:2px solid #f00;
+  border:10px solid #F5B800;
 }
 
 #wrapper{
