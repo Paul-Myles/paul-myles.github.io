@@ -32,7 +32,7 @@
 </head>
 
 <body>
-
+<div id="wrapper2">
     <div class="full-width" id="hero-bg">
 
         <div class="container outer">
@@ -358,8 +358,11 @@
 
             <!-- </div> --><!-- end ORIGINAL container -->
         </div>
-
+</div>
         <!-- SELECT PAGEs -->
+        
+        <div id="wrapper">
+        
         <section class="main">
         
             <div id="ri-grid" class="ri-grid ri-grid-size-3">
@@ -399,8 +402,6 @@
                 </div>
 
         </section>
-        <div id="wrapper">
-        
 
         <!-- Page Content -->
         <div class="container">
@@ -488,10 +489,10 @@
         });
 
 
-        $("input:radio[class=radioBtnClass]").click(function() {
-            var value = $(this).val();
-            console.log(value)
-        });
+        // $("input:radio[class=radioBtnClass]").click(function() {
+        //     var value = $(this).val();
+        //     console.log(value)
+        // });
 
         var $total_score = 0;
 
@@ -512,6 +513,8 @@
             });
 
            $("#btn").click(function() {
+                $('#wrapper').show("fast");
+                $('#wrapper2').hide("fast");
                console.log($total_score);
             });
 

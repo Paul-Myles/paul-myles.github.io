@@ -276,6 +276,10 @@ label > input:checked + img{ /* (RADIO CHECKED) IMAGE STYLES */
   border:2px solid #f00;
 }
 
+#wrapper{
+    display: none;
+}
+
 /*
 
     SLIDER CSS
