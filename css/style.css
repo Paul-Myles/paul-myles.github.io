@@ -1,3 +1,35 @@
+@font-face {
+  font-family: 'gt-walsheim';
+  src: 
+    url('../fonts/gt-walsheim-light-web.woff') format('woff'),
+    url('../fonts/gt-walsheim-medium-web.woff') format('woff'),
+    url('../fonts/gt-walsheim-light-web.ttf')  format('truetype'), 
+    url('../fonts/gt-walsheim-medium-web.ttf')  format('truetype');
+}
+
+@font-face {
+  font-family: 'Amatic';
+  src: 
+    url('../fonts/Amatic-Bold.ttf')  format('truetype'), 
+    url('../fonts/AmaticSC-Regular.ttf')  format('truetype'); 
+}
+
+html {
+    background-color: #343434;
+}
+
+p {
+    font-family: 'gt-walsheim';
+}
+
+h4{
+    font-family: 'Amatic';
+    font-size: 4em;
+    font-weight: 100;
+    text-align: center;
+    color: #FFF;
+    margin: 0 0 15px 0;
+}
 
 .possible_answer  {
     padding: .75em;
@@ -159,10 +191,42 @@ ul.mtree.bubba ul{
     width: /*whatever width you want*/;
 }
 
-.banger {
+.btn-results {
     width: 100%;
-    background-color: #F6B82B;
-    padding: 0!important;
+    background-color: #343434;
+    padding: 20px 0 0 0;
+    text-align: center; 
+}
+
+.btn-results button {
+    background-color: #F5B800;
+    border-bottom: 2px solid #CAA74A;
+    width: 140px;
+    color: #FFF;
+    text-transform: uppercase;
+}
+
+.btn-results button:hover {
+    background-color: #CAA74A;
+}
+
+.btn-Next {
+    width: 100%;
+    background-color: #FFF;
+    padding: 20px 0;
+    text-align: center; 
+}
+
+.btn-Next button {
+    background-color: #F5B800;
+    border-bottom: 2px solid #CAA74A;
+    width: 140px;
+    color: #FFF;
+    text-transform: uppercase;
+}
+
+.btn-Next button:hover {
+    background-color: #CAA74A;
 }
 
 .accordin-padding {
@@ -191,10 +255,6 @@ footer {
     margin: 50px 0;
 }
 
-html {
-    background-color: #343434;
-}
-
 .portrait-pos {
     padding:0;
     position:relative;
@@ -204,7 +264,17 @@ html {
     z-index: 1000;
 }
 
-
+label > input{ /* HIDE RADIO */
+  visibility: hidden; /* Makes input not-clickable */
+  position: absolute; /* Remove input from document flow */
+}
+label > input + img{ /* IMAGE STYLES */
+  cursor:pointer;
+  border:2px solid transparent;
+}
+label > input:checked + img{ /* (RADIO CHECKED) IMAGE STYLES */
+  border:2px solid #f00;
+}
 
 /*
 

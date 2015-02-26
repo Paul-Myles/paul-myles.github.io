@@ -38,9 +38,12 @@ ul.mtree.bubba li.mtree-node > a:after {
   font-weight: normal;*/
 }
 ul.mtree.bubba li.mtree-node > a {
+  font-family: 'gt-walsheim';
   font-weight: bold;
   text-transform: upperCase;
   text-align: center;
+  text-decoration: none;
+  color: #959595;
 }
 ul.mtree.bubba li.mtree-node > a img {
   margin: 0 auto;
@@ -59,11 +62,10 @@ ul.mtree.bubba > li.mtree-open > a {
   background: #DDD;
 }
 ul.mtree.bubba li > a:hover {
-  background: #F6B82B;
+  background: #46166A;
 }
 ul.mtree.bubba li.mtree-active > a {
-  background: #FFC000;
-  color: #FFF;
+  display: none;
 }
 ul.mtree.bubba a {
   padding: 7px 0px 9px 1em;
