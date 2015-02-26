@@ -19,6 +19,9 @@
     <link href="css/mtree.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 
+    <!-- Custom Modernizr -->
+    <script src="js/modernizr.custom.26633.js"></script>
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -356,6 +359,49 @@
             <!-- </div> --><!-- end ORIGINAL container -->
         </div>
 
+        <!-- SELECT PAGE -->
+
+        <!-- Page Content -->
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-lg-12" style="margin-bottom:35px;">
+
+                    <p style="text-align:center;padding:2em 0;">
+                        For each answer you give, you get points. Points are broken down into the 4 categories below, <br />so how you answer will determine how many points you get. After you’ve answered all the<br />question we’ll total up your score and partner you with your perfect travel buddy!
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div><!-- end container -->
+
+        <div class="full-width" id="bg-color">
+
+            <div class="container">
+
+                <div class="row">
+
+                    <div class="col-lg-12 vcenter booking-padding">
+
+                        <img id="icon-relative-pos" class="img-responsive" src="img/icon_plane.png" />
+
+                        <img class="img-responsive" src="img/book_text-Steve.png" />
+                        
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+
+
         <!-- Footer -->
         <footer>
             <!--<div class="row">
@@ -366,8 +412,7 @@
             <!-- /.row -->
         </footer>
 
-    <!-- </div> -->
-    <!-- /.container -->
+
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
@@ -377,6 +422,7 @@
 
     <!-- mtree js -->
     <script src='http://cdnjs.cloudflare.com/ajax/libs/velocity/0.2.1/jquery.velocity.min.js'></script>
+    <script src="js/jquery.gridrotator.js"></script>
     <script src="js/mtree.js"></script>
     <script type="text/javascript">
         $(function(){
@@ -430,6 +476,37 @@
 
         });
 
+        // grid slider
+        $(function() {
+            
+            $( '#ri-grid' ).gridrotator( {
+                rows : 2,
+                columns : 12,
+                maxStep : 2,
+                interval : 2000,
+                w1024 : {
+                    rows : 3,
+                    columns : 9
+                },
+                w768 : {
+                    rows : 1,
+                    columns : 5
+                },
+                w480 : {
+                    rows : 1,
+                    columns : 4
+                },
+                w320 : {
+                    rows : 1,
+                    columns : 4
+                },
+                w240 : {
+                    rows : 1,
+                    columns : 3
+                }
+            } );
+            
+        });
 
     </script>
 
