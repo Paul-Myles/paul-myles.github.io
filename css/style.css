@@ -282,6 +282,10 @@ label > input:checked + img{ /* (RADIO CHECKED) IMAGE STYLES */
     display: none;
 }
 
+.person.is-hidden {
+    display: none;
+}
+
 /*
 
     SLIDER CSS

@@ -362,6 +362,34 @@
         <!-- SELECT PAGEs -->
         
         <div id="wrapper">
+
+            <div class="person tim-pointer is-hidden">
+                <h1>Tim Pointer</h1>
+            </div>
+
+            <div class="person nicky-greville is-hidden">
+                <h1>Nicky Greville</h1>
+            </div>
+
+            <div class="person aimee-knox is-hidden">
+                <h1>Aimee Knox</h1>
+            </div>
+
+            <div class="person nic-winslade is-hidden">
+                <h1>Nic Winslade</h1>
+            </div>
+
+            <div class="person jono-key is-hidden">
+                <h1>Jono Key</h1>
+            </div>
+
+            <div class="person josh-moore is-hidden">
+                <h1>Josh Moore</h1>
+            </div>
+
+            <div class="person steve-kane is-hidden">
+                <h1>Steve Kane</h1>
+            </div>
         
         <!-- <section class="main">
         
@@ -494,7 +522,7 @@
 
             switch(true) {
                 case (score < 15):
-                    person = "tim-poiner";
+                    person = "tim-pointer";
                     break;
                 case (score < 22):
                     person = "nicky-greville";
@@ -548,6 +576,7 @@
                 console.log("Total Score: " + $total_score);
                 console.log("Best Match:  " + person);
 
+                $('#wrapper .' + person).removeClass("is-hidden");
                 $('#wrapper').show("fast");
                 $('#wrapper2').hide("fast");
 
