@@ -488,6 +488,36 @@
             });
         });
 
+        var matchPerson = function(score) {
+
+            var person;
+
+            switch(true) {
+                case (score < 15):
+                    person = "tim-poiner";
+                    break;
+                case (score < 22):
+                    person = "nicky-greville";
+                    break;
+                case (score < 30):
+                    person = "aimee-knox";
+                    break;
+                case (score < 38):
+                    person = "nic-winslade";
+                    break;
+                case (score < 46):
+                    person = "jono-key";
+                    break;
+                case (score < 60):
+                    person = "josh-moore";
+                    break;
+                default:
+                    person = "steve-kane";
+            }
+
+            return person;        
+        };
+
 
         // $("input:radio[class=radioBtnClass]").click(function() {
         //     var value = $(this).val();
@@ -513,9 +543,15 @@
             });
 
            $("#btn").click(function() {
+
+                var person = matchPerson($total_score);
+                console.log("Total Score: " + $total_score);
+                console.log("Best Match:  " + person);
+
                 $('#wrapper').show("fast");
                 $('#wrapper2').hide("fast");
-               console.log($total_score);
+
+                
             });
 
         });
