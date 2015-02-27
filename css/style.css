@@ -37,15 +37,12 @@ h2{
     font-size: 13px;
     font-weight: 100;
     text-align: center;
-    color: #A48BB3;
+    color: #FFF;
+    /*color: #A48BB3;*/
     margin: 0 0 15px 0;
 }
 
-h2:hover {
-    color: #FFF;
-}
-
-.hover-h2:hover {
+.hover-h2 h2:hover {
     color: #FFF;
 }
 
@@ -324,7 +321,15 @@ label > input + img{ /* IMAGE STYLES */
   border:2px solid transparent;
 }
 label > input:checked + img{ /* (RADIO CHECKED) IMAGE STYLES */
-  border:10px solid #F5B800;
+  border:5px solid #F5B800;
+}
+
+label:hover{
+    opacity: .7;
+    color: #FFF;
+}
+label h2:hover{
+    color: #FFF;
 }
 
 #wrapper{
