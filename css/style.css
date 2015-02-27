@@ -32,6 +32,23 @@ h4{
     margin: 0 0 15px 0;
 }
 
+h2{
+    font-family: 'gt-walsheim';
+    font-size: 1.5em;
+    font-weight: 100;
+    text-align: center;
+    color: #A48BB3;
+    margin: 0 0 15px 0;
+}
+
+h2:hover {
+    color: #FFF;
+}
+
+.hover-h2:hover {
+    color: #FFF;
+}
+
 .selectedWinner h4 {
     font-family: 'Amatic';
     font-size: 4em;
@@ -262,9 +279,22 @@ ul.mtree.bubba ul{
     top: -35px;
 }
 
+.pos-rel{
+    position: relative;
+}
+
+.pos-ab{
+    position: absolute;
+}
+
 .portrait-relative-pos {
-    /*position: relative;
-    top: -280px;*/
+    position: relative;
+    top: 100px;
+}
+
+.rel-pos{
+    position: relative;
+    top: 80px;
 }
 
 .portfolio-item {
@@ -313,7 +343,8 @@ label > input:checked + img{ /* (RADIO CHECKED) IMAGE STYLES */
 
 .ri-grid{
     margin: 0 auto;
-    position: relative;
+    /*position: relative;*/
+    position: absolute;
     height: auto;
 }
 
