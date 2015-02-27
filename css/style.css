@@ -37,8 +37,12 @@ h4{
     font-size: 4em;
     font-weight: 100;
     text-align: center;
-    color: lightblue;
+    color: #FFF;
     margin: 0 0 15px 0;
+}
+
+.person.is-hidden {
+    display: none;
 }
 
 .possible_answer  {
@@ -259,8 +263,8 @@ ul.mtree.bubba ul{
 }
 
 .portrait-relative-pos {
-    position: relative;
-    top: -280px;
+    /*position: relative;
+    top: -280px;*/
 }
 
 .portfolio-item {
