@@ -258,6 +258,11 @@ ul.mtree.bubba ul{
     top: -35px;
 }
 
+.portrait-relative-pos {
+    position: relative;
+    top: -280px;
+}
+
 .portfolio-item {
     /*margin-bottom: 25px;*/
     margin: 0 auto;
