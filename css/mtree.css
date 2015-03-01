@@ -44,6 +44,7 @@ ul.mtree.bubba li.mtree-node > a {
   text-align: center;
   text-decoration: none;
   color: #959595;
+  font-size: 1.1em;
 }
 ul.mtree.bubba li.mtree-node > a img {
   margin: 0 auto;
@@ -63,12 +64,14 @@ ul.mtree.bubba > li.mtree-open > a {
 }
 ul.mtree.bubba li > a:hover {
   background: #46166A;
+  padding: 1.2em 0;
 }
 ul.mtree.bubba li.mtree-active > a {
   display: none;
 }
 ul.mtree.bubba a {
-  padding: 7px 0px 9px 1em;
+  padding: 1em;
+  /*padding: 7px 0px 9px 1em;*/
 }
 ul.mtree.bubba li li > a {
   padding-left: 2em;
