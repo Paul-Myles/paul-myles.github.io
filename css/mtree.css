@@ -66,7 +66,7 @@ ul.mtree.bubba li > a:hover {
   background: #46166A;
   padding: 1.2em 0;
 }
-ul.mtree.bubba li.mtree-active > a {
+ul.mtree.bubba li.mtree-open > a {
   display: none;
 }
 ul.mtree.bubba a {

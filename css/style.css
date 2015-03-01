@@ -288,8 +288,12 @@ label > input + img{ /* IMAGE STYLES */
 }
 label > input:checked + img{ /* (RADIO CHECKED) IMAGE STYLES */
   border:5px solid #F5B800;
+  
 }
-label > input:checked + label{
+:checked + #testos{
+    display: none;
+}
+label > input:checked + img + span{
     color: #FFF;
 }
 label > input:hover + img{ /* (RADIO HOVER) IMAGE STYLES */
@@ -334,7 +338,7 @@ label {
 }
 
 .dummy {
-    padding-top: 100%; /* forces 1:1 aspect ratio */
+    padding-top: 60%; /* forces 1:1 aspect ratio */
 }
 
 .img-container {
@@ -343,7 +347,7 @@ label {
     bottom: 0;
     left: 0;
     right: 0;
-    padding: 0 20px;
+    padding: 0 80px;
 
     text-align:center; /* Align center inline elements */
     font: 0/0 a;
@@ -361,9 +365,59 @@ label {
     display: inline-block;
 }
 
+.banner-padding {
+    padding: 0 40px;
+}
+
+.content {
+    width: 670px;
+    margin: 0 auto;
+}
+
 /*
     Media Queries
 */
+@media(max-width:641px){
+    h5{
+        font-size: 4em;
+    }
+}
+@media(max-width:571px){
+    h5{
+        font-size: 3.8em
+    }
+}
+@media(max-width:543px){
+    h5{
+        font-size: 3em
+    }
+}
+@media(max-width:432px){
+    h5{
+        font-size: 2.7em
+    }
+}
+@media(max-width:390px){
+    h5{
+        font-size: 2.3em
+    }
+}
+@media(max-width:341px){
+    h5{
+        font-size: 2.1em;
+    }
+}
+@media(max-width:307px){
+    h5{
+        font-size: 1.6em;
+    }
+}
+@media(max-width:245px){
+    h5{
+        font-size: 1.5em;
+        padding: 0 5px;
+    }
+}
 @media(max-width:767px){
     .hero-bg{
         min-height: 590px;
@@ -371,11 +425,11 @@ label {
     ul.mtree.bubba a {
       padding: 1em 2em;    
     }
-    .portrait-relative-pos {
+    /*.portrait-relative-pos {
         position: relative;
         top: 70px;
     }
-}
+*/}
 @media(min-width:768px){
     .hero-bg{
         min-height: 680px;
@@ -385,6 +439,9 @@ label {
     .hero-bg{
         min-height: 726px;
     }
+    /*.portrait-relative-pos{
+        top: 80px;
+    }*/
 }
 @media(min-width:1200px){
     .hero-bg{
