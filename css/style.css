@@ -23,6 +23,15 @@ p {
     color: #D0D0D0;
 }
 
+/*h2{
+    font-family: 'gt-walsheim';
+    font-size: 15px;
+    font-weight: 100;
+    text-align: center;
+    color: #A48BB3;
+    margin: 0 0 15px 0;
+}*/
+
 h4{
     font-family: 'Amatic';
     font-size: 4em;
@@ -30,20 +39,21 @@ h4{
     text-align: center;
     color: #FFF;
     margin: 0 0 15px 0;
+    /*padding: 0 1em;*/
 }
 
-h2{
-    font-family: 'gt-walsheim';
-    font-size: 13px;
+h5{
+    font-family: 'Amatic';
+    font-size: 4.5em;
     font-weight: 100;
     text-align: center;
     color: #FFF;
-    /*color: #A48BB3;*/
     margin: 0 0 15px 0;
+    padding: 0 1em;
 }
 
-.hover-h2 h2:hover {
-    color: #FFF;
+.person a {
+    text-decoration: none;
 }
 
 .selectedWinner h4 {
@@ -52,6 +62,15 @@ h2{
     font-weight: 100;
     text-align: center;
     color: #FFF;
+    margin: 0 0 15px 0;
+}
+
+.howItWorks h4 {
+    font-family: 'Amatic';
+    font-size: 4em;
+    font-weight: 100;
+    text-align: center;
+    color: #46166B;
     margin: 0 0 15px 0;
 }
 
@@ -69,71 +88,6 @@ h2{
     font-weight: bold;
 }
 
-.correct-answer, .wrong-answer {
-	opacity: .75;
-	cursor: pointer;
-}
-
-.wrong-answer {
-	background: #FF8362;	
-}
-
-.correct-answer {
-    background: #62DA97;
-}
-
-.selected {
-    opacity: 1;
-}
-
-.selected:hover, .correct-answer:hover, .wrong-answer:hover {
-	opacity: 1;
-}
-
-.how_you_did {
-	text-align: center;
-	padding: 1em;
-	background-color: rgb(254, 231, 88);
-	font-weight: bold;
-	font-size: 1.25em;
-	-webkit-box-shadow: 0px 7px 5px rgba(50, 50, 50, 0.65);
-	-moz-box-shadow:    0px 7px 5px rgba(50, 50, 50, 0.65);
-	box-shadow:         0px 7px 5px rgba(50, 50, 50, 0.65);
-}
-
-/*multimedia styling*/
-
-img, .youtube {
-	/*margin-bottom: 1em;
-	min-height: 200px;
-	max-height: 200px;*/
-}
-
-.possible_answer img {
-	max-height: 24em;
-}
-
-.question img, .revealed_answer img, .selected img, .correct-answer img, .wrong-answer img {
-    max-height: 24em;
-    display: block;
-}
-
-.videoembed {
-    position: relative;
-    padding-bottom: 56.25%;
-    padding-top: 30px;
-    height: 0;
-    overflow: hidden;
-}
-
-.videoembed iframe, .videoembed object, .videoembed embed {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-}
-
 /* STYLES */
 .mtree-wrap .mtree {
     background: #F7F7F7;
@@ -144,11 +98,6 @@ img, .youtube {
 
 ul.mtree.bubba ul{
     padding: 0;
-}
-
-/* CHANGE ME */
-    ul.mtree.bubba a{
-    /*padding: 7px 0.5em!important;*/
 }
 
 .next-submit{
@@ -167,14 +116,13 @@ ul.mtree.bubba ul{
  	align-items: center;
 }
 
-#hero-bg{
+.hero-bg{
     background:url('../img/hero_1.jpg') no-repeat top center;
-    background-size: 100% auto;
       -webkit-background-size: cover;
       -moz-background-size: cover;
       -o-background-size: cover;
     background-size: cover;
-    height: 800px;
+    min-height: 730px;
 }
 
 .full-width{
@@ -199,6 +147,20 @@ ul.mtree.bubba ul{
 
 .question-padding {
     padding: 3em 0 2em 0;
+}
+
+.logo {
+    position: absolute;
+    z-index: 1000;
+}
+
+.logo img {
+    max-width:100%;
+    height:auto;
+    border:none;
+    display: block;
+    padding: 20px 0 0 0;
+    /*margin: 0 auto;*/
 }
 
 .outer {
@@ -236,7 +198,11 @@ ul.mtree.bubba ul{
 }
 
 .btn-results button:hover {
-    background-color: #CAA74A;
+    border-bottom: 2px solid #CAA74A;
+    background-color: #F5B800;
+    text-transform: uppercase;
+    color: #FFF;
+    font-family: 'gt-walsheim';
 }
 
 .btn-Next {
@@ -318,26 +284,62 @@ label > input{ /* HIDE RADIO */
 }
 label > input + img{ /* IMAGE STYLES */
   cursor:pointer;
-  border:2px solid transparent;
+  border:5px solid transparent;
 }
 label > input:checked + img{ /* (RADIO CHECKED) IMAGE STYLES */
   border:5px solid #F5B800;
 }
-
-label:hover{
-    opacity: .7;
+label > input:checked + label{
     color: #FFF;
 }
-label h2:hover{
+label > input:hover + img{ /* (RADIO HOVER) IMAGE STYLES */
+  border:5px solid #F5B800;
+}
+
+label {
+    font-family: 'gt-walsheim';
+    font-size: 14px;
+    font-weight: 100;
+    text-align: center;
+    color: #A48BB3;
+    margin: 0!important;
+    cursor: pointer;
+}
+
+.hover-state:hover label{
     color: #FFF;
 }
 
-#wrapper{
+#wrapper-selected{
     display: none;
 }
 
 .person.is-hidden {
     display: none;
+}
+
+/*
+    Media Queries
+*/
+@media(max-width:767px){
+    .hero-bg{
+        min-height: 620px;
+    }
+}
+@media(min-width:768px){
+    .hero-bg{
+        min-height: 680px;
+    }
+}
+@media(min-width:992px){
+    .hero-bg{
+        min-height: 726px;
+    }
+}
+@media(min-width:1200px){
+    .hero-bg{
+        min-height: 800px;
+    }
 }
 
 /*
