@@ -407,7 +407,7 @@ label {
 #bg-grad {
     background-image: -webkit-linear-gradient(left, #46166B, #46166B 50%, #F6B82B 50%);
     background-image: linear-gradient(to right, #46166B, #46166B 50%, #F6B82B 50%);
-    padding: 1em 0;
+    padding: 1em 0 .5em;
 }
 
 /*USAGE*/
