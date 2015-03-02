@@ -65,9 +65,9 @@
         </div>
         <div class="row">
 
-            <div class="col-md-8 col-md-offset-2">
+            <div class="col-md-8 col-md-offset-2 intro-style">
 
-                <p style="text-align:center;padding:2em 0;">
+                <p>
                     For each answer you give, you get points. Points are broken down into the 4 categories below, so how you answer will determine how many points you get. After you’ve answered all the question we’ll total up your score and partner you with your perfect travel buddy!
                 </p>
 
@@ -75,7 +75,7 @@
 
         </div>
 
-            <div class="col-sm-3 col-xs-6 ellipse-x">
+            <!-- <div class="col-sm-3 col-xs-6 ellipse-x">
                 <img class="img-responsive portfolio-item" src="img/ellipse_1.jpg" alt="image">
                 <p>Safe</p>
             </div>
@@ -93,7 +93,7 @@
             <div class="col-sm-3 col-xs-6 ellipse-x">
                 <img class="img-responsive portfolio-item" src="img/ellipse_4.jpg" alt="image">
                 <p>Out of the Box</p>
-            </div>
+            </div> -->
 
         </div>
         <!-- /.row -->
@@ -109,7 +109,7 @@
                     <ul id="mtree-scroll" class="mtree bubba">
 
                     <!-- Question 1 -->
-                        <li><a id="testos" href="#">Pick your travel bag of choice</a>
+                        <li><a id="openingQuestion" href="#">Pick your travel bag of choice</a>
                           <ul>
                             <li>
                                 <div class="container accordin-padding">
@@ -600,15 +600,15 @@
 
                             <div class="col-lg-12 selectedWinner">
                                 
-                                <div class="person josh-moore is-hidden">
+                                <div class="person tom-p is-hidden">
 
                                     <img class="img-responsive portfolio-item" src="img/border_top.png" alt="image">
 
-                                        <h4>You got Josh Moore</h4>
+                                        <h4>You got Tim</h4>
 
                                     <img class="img-responsive portfolio-item" src="img/border_bottom.png" alt="image">
 
-                                    <img class="img-responsive portfolio-item ellipse-padding" src="img/portraits/283x283_Jono.png" alt="image">
+                                    <img class="img-responsive portfolio-item ellipse-padding" src="img/portraits/283x283_Tom.png" alt="image">
 
                                 </div>
                                   
@@ -657,9 +657,9 @@
 
                 <div class="row">
 
-                    <div class="col-md-8 col-md-offset-2">
+                    <div class="col-md-8 col-md-offset-2 result-style">
 
-                        <p style="text-align:center;padding:2em 0;">
+                        <p>
                             For each answer you give, you get points. Points are broken down into the 4 categories below, so how you answer will determine how many points you get. After you’ve answered all the question we’ll total up your score and partner you with your perfect travel buddy!
                         </p>
 
@@ -787,7 +787,7 @@
                     person = "jono-key";
                     break;
                 case (score < 60):
-                    person = "josh-moore";
+                    person = "tom-p";
                     break;
                 default:
                     person = "steve-kane";
@@ -869,24 +869,31 @@
 
             });
 
-            function scrollToAnchor( target ){
-
-              if( target.length ) {
-                    //get distance to scroll and add a 5px buffer
-                    var distance = target.offset().top + 25;
-                    $('html, body').animate({
-                        scrollTop: distance
-                    }, 600);
-                }
-
-            }
-
-            $('#testos').click(function(){
-
-                var target = $('#mtree-scroll');
-                scrollToAnchor( target );
-
+            // activates anchor - question 1
+            $(function(){ // On DOM ready
+                $('#openingQuestion').click();
             });
+
+            // function scrollToAnchor( target ){
+
+            //   if( target.length ) {
+            //         //get distance to scroll and add a 5px buffer
+            //         var distance = target.offset().top + 25;
+            //         $('html, body').animate({
+            //             scrollTop: distance
+            //         }, 600);
+            //     }
+
+            // }
+
+
+
+            // $('#openingQuestion').click(function(){
+
+            //     var target = $('#mtree-scroll');
+            //     scrollToAnchor( target );
+
+            // });
 
         });
 
