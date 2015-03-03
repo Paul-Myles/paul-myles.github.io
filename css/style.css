@@ -54,6 +54,18 @@ h5{
     padding: 0 1em;*/
 }
 
+h1{
+    font-family: 'Amatic';
+    font-size: 1.8em;
+    font-weight: 100;
+    text-align: center;
+    color: #FFF;
+    margin: 0;
+    padding: 10px 0 3px;
+    /*margin: 0 0 15px 0;
+    padding: 0 1em;*/
+}
+
 .alternate-style p{
     text-align: center;
     color: #FFF;
@@ -63,6 +75,10 @@ h5{
 
 .person a {
     text-decoration: none;
+}
+
+.selectedWinner {
+    z-index: 10;
 }
 
 .selectedWinner h4 {
@@ -155,6 +171,11 @@ ul.mtree.bubba ul{
     position: relative;
     z-index: 9999;
 }*/
+
+.mid-container {
+    vertical-align: middle;
+    display: inline-block;
+}
 
 
 .ellipse-x p{
@@ -316,6 +337,16 @@ footer {
     z-index: 1000;
 }
 
+.overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  background-color: rgba(0,0,0,0.5); /*dim the background*/
+}
+
 label > input{ /* HIDE RADIO */
   visibility: hidden; /* Makes input not-clickable */
   position: absolute; /* Remove input from document flow */
@@ -387,9 +418,8 @@ label {
     left: 0;
     right: 0;
     padding: 0 80px;
-
     text-align:center; /* Align center inline elements */
-    font: 0/0 a;
+    /*font: 0/0 a;*/
 }
 
 .img-container:before {
