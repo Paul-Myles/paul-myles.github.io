@@ -52,7 +52,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    
 
     <!-- Page Content -->
     <div class="container">
@@ -79,30 +79,8 @@
 
         </div>
 
-            <!-- <div class="col-sm-3 col-xs-6 ellipse-x">
-                <img class="img-responsive portfolio-item" src="img/ellipse_1.jpg" alt="image">
-                <p>Safe</p>
-            </div>
-
-            <div class="col-sm-3 col-xs-6 ellipse-x">
-                <img class="img-responsive portfolio-item" src="img/ellipse_2.jpg" alt="image">
-                <p>Adventurous</p>
-            </div>
-
-            <div class="col-sm-3 col-xs-6 ellipse-x">
-                <img class="img-responsive portfolio-item" src="img/ellipse_3.jpg" alt="image">
-                <p>Hyper Active</p>
-            </div>
-
-            <div class="col-sm-3 col-xs-6 ellipse-x">
-                <img class="img-responsive portfolio-item" src="img/ellipse_4.jpg" alt="image">
-                <p>Out of the Box</p>
-            </div> -->
-
         </div>
         <!-- /.row -->
-
-    <!-- </div> --><!-- end new container -->
 
         <!-- quiz -->
         <div class="row" id="this-row">
@@ -405,6 +383,8 @@
 
 
     <div id="wrapper-selected">
+
+        <a href="#top"></a>
 
         <div class="container">
 
@@ -1087,6 +1067,17 @@
                 $('#openingQuestion').click();
             });
 
+            // $("a[href='#top']").click(function() {
+            //   $("html, body").animate({ scrollTop: 0 }, "slow");
+            //   return false;
+            // });
+
+            $('#btn').click(function(){
+                $("html, body").animate({ scrollTop: 0 }, "slow");
+                return false;
+
+            });
+
             // function scrollToAnchor( target ){
 
             //   if( target.length ) {
@@ -1103,7 +1094,7 @@
 
             // $('#btn').click(function(){
 
-            //     var target = $('#wrapper-selected');
+            //     var target = $('#top');
             //     scrollToAnchor( target );
 
             // });
