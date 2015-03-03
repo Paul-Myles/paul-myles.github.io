@@ -54,6 +54,16 @@ h5{
     padding: 0 1em;*/
 }
 
+h2 {
+    font-family: 'Amatic';
+    font-size: 2.3em;
+    font-weight: 100;
+    text-align: center;
+    color: #FFF;
+    margin: 0;
+    padding: 10px 0;
+}
+
 h1{
     font-family: 'Amatic';
     font-size: 1.8em;
@@ -344,7 +354,7 @@ footer {
   width: 100%;
   height: 100%;
   z-index: 10;
-  background-color: rgba(0,0,0,0.5); /*dim the background*/
+  background-color: rgba(0,0,0,0.3); /*dim the background*/
 }
 
 label > input{ /* HIDE RADIO */
