@@ -3,27 +3,51 @@
 */
 
 #page1 {
-	background-image:url('../images/project/bg.jpg');
+	background: url(../images/project/bg.jpg) no-repeat center center fixed; 
+	 -webkit-background-size: cover;
+	 -moz-background-size: cover;
+	 -o-background-size: cover;
+	background-size: cover;
 }
 
 #page2 {
-	background-image:url('../images/project/bg3.jpg');
+	background: url(../images/project/bg3.jpg) no-repeat center center fixed; 
+	 -webkit-background-size: cover;
+	 -moz-background-size: cover;
+	 -o-background-size: cover;
+	background-size: cover;
 }
 
 #page3 {
-	background-image:url('../images/project/bg2.jpg');
+	background: url(../images/project/bg2.jpg) no-repeat center center fixed;
+	 -webkit-background-size: cover;
+	 -moz-background-size: cover;
+	 -o-background-size: cover;
+	background-size: cover;
 }
 
 #page4 {
-	background-image:url('../images/project/bg4.jpg');
+	background: url(../images/project/bg4.jpg) no-repeat center center fixed;
+	 -webkit-background-size: cover;
+	 -moz-background-size: cover;
+	 -o-background-size: cover;
+	background-size: cover;
 }
 
 #page5 {
-	background-image:url('../images/project/bg6.jpg');
+	background: url(../images/project/bg.jpg) no-repeat center center fixed;
+	 -webkit-background-size: cover;
+	 -moz-background-size: cover;
+	 -o-background-size: cover;
+	background-size: cover;
 }
 
 #page6 {
-	background-image:url('../images/project/bg5.jpg');
+	background: url(../images/project/bg4.jpg) no-repeat center center fixed;
+	 -webkit-background-size: cover;
+	 -moz-background-size: cover;
+	 -o-background-size: cover;
+	background-size: cover;
 }
 
 #frame_1 {
@@ -106,9 +130,9 @@
 	background-image:url('../images/slide/kiosk1.jpg');
 }
 
-#frame_21 {
+/*#frame_21 {
 	background-image:url('../images/slide/kiosk2.jpg');
-}
+}*/
 
 #frame_22 {
 	background-image:url('../images/slide/kiosk3.jpg');
