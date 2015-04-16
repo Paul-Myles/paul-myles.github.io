@@ -4,9 +4,20 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
+@font-face {
+  font-family: 'SamsungSharpSans-Regular';
+  src: url('../fonts/SamsungSharpSans-WebFonts/SamsungSharpSans-Regular.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/SamsungSharpSans-WebFonts/SamsungSharpSans-Regular.eot') format('embedded-opentype'), 
+       url('../fonts/SamsungSharpSans-WebFonts/SamsungSharpSans-Regular.woff') format('woff'), 
+       url('../fonts/SamsungSharpSans-WebFonts/SamsungSharpSans-Regular.ttf')  format('truetype'), 
+       url('../fonts/SamsungSharpSans-WebFonts/SamsungSharpSans-Regular.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
 html,
 body {
     height: 100%;
+    color: #FFF;
+    background-color: #000;
 }
 
 .carousel,
@@ -15,8 +26,68 @@ body {
     height: 100%;
 }
 
+h1 {
+    font-family: 'SamsungSharpSans-Regular', Sans-serif, Arial;
+    font-size: 4.2em;
+    line-height: 1.2em;
+    letter-spacing: 0.2em;
+}
+
+h2 {
+    font-family: 'SamsungSharpSans-Regular', Sans-serif, Arial;
+    font-size: 4em;
+    line-height: 1.2em;
+    letter-spacing: 0.2em;
+}
+
+h3 {
+    font-family: 'SamsungSharpSans-Regular', Sans-serif, Arial;
+    font-size: 2.5em;
+    line-height: 1.2em;
+    letter-spacing: 0.2em;
+    /*padding: 0 0.8em;*/
+}
+
+h4 {
+    font-family: 'SamsungSharpSans-Regular', Sans-serif, Arial;
+    font-size: 1.5em;
+    line-height: 1.2em;
+    letter-spacing: 0.2em;
+}
+
+h5 {
+    font-family: 'SamsungSharpSans-Regular', Sans-serif, Arial;
+    font-size: 30px;
+    line-height: 45px;
+    letter-spacing: 2px;
+}
+
+p, li {
+    font-family: 'SamsungSharpSans-Regular', Sans-serif, Arial;
+    line-height: 50px;
+    font-size: 28px;
+    letter-spacing: 1px;
+}
+
+span {
+    font-size: 36px!important;
+    font-family: 'SamsungSharpSans-Regular', Sans-serif, Arial;
+    line-height: 50px;
+}
+
+.row {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
 .carousel-inner {
     height: 100%;
+}
+
+#ie-fix {
+    /*width: 1170px!important;*/
+    width: 70%!important;
+    margin: 80px auto 0;
 }
 
 /* Background images are set within the HTML using inline CSS, not here */
@@ -33,4 +104,68 @@ body {
 
 footer {
     margin: 50px 0;
+}
+
+.audio_wrapper {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 10px;
+}
+
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Large devices (large desktops, 992px and up) */
+@media all and (max-width: 992px) {
+    /*h1 {
+        font-size: 1em;
+    }*/
+}
+
+/* Medium devices (medium desktops, 610px and up) */
+@media all and (max-width: 610px) {
+    h1 {
+        font-size: 2.5em;
+    }
+    h2 {
+        font-size: 2.2em;
+    }
+}
+
+/* Small devices (small desktops, 445px and up) */
+@media all and (max-width: 445px) {
+    h1 {
+        font-size: 2.2em;
+        margin-top: 0!important;
+        margin-bottom: 0!important;
+    }
+    h2 {
+        font-size: 2em;
+    }
+    h3 {
+        font-size: 1.4em;
+        line-height: 1em;
+    }
+    h4 {
+        font-size: 1em;
+    }
+    span {
+        font-size: 0.3em;
+    }
+    #outcome, 
+    #offer,
+    .audio_wrapper {
+        display: none;
+    }
+
+    #ie-fix {
+        margin-top: 80px;
+        width: auto!important;
+    }
+    .carousel,
+    .item,
+    .active {
+        margin-top: 0;
+    }
 }
