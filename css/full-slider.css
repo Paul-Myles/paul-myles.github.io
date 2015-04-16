@@ -136,19 +136,19 @@ footer {
 /* Small devices (small desktops, 445px and up) */
 @media all and (max-width: 445px) {
     h1 {
-        font-size: 2.2em;
+        font-size: 2em;
         margin-top: 0!important;
         margin-bottom: 0!important;
     }
     h2 {
-        font-size: 2em;
+        font-size: 1.8em;
     }
     h3 {
         font-size: 1.4em;
         line-height: 1em;
     }
     h4 {
-        font-size: 1em;
+        font-size: 0.9em;
     }
     span {
         font-size: 0.3em;
