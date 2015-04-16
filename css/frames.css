@@ -4,7 +4,7 @@
 */
 
 #page1 {
-	background: url(../images/project/bg.jpg) no-repeat center center fixed; 
+	background: url(../images/project/bg.jpg) no-repeat top center fixed; 
 	 -webkit-background-size: cover;
 	 -moz-background-size: cover;
 	 -o-background-size: cover;
@@ -12,7 +12,7 @@
 }
 
 #page2 {
-	background: url(../images/project/bg3.jpg) no-repeat center center fixed; 
+	background: url(../images/project/bg1.jpg) no-repeat top center fixed; 
 	 -webkit-background-size: cover;
 	 -moz-background-size: cover;
 	 -o-background-size: cover;
@@ -20,7 +20,7 @@
 }
 
 #page3 {
-	background: url(../images/project/bg2.jpg) no-repeat center center fixed;
+	background: url(../images/project/bg2.jpg) no-repeat top center fixed;
 	 -webkit-background-size: cover;
 	 -moz-background-size: cover;
 	 -o-background-size: cover;
@@ -28,7 +28,7 @@
 }
 
 #page4 {
-	background: url(../images/project/bg4.jpg) no-repeat center center fixed;
+	background: url(../images/project/bg3.jpg) no-repeat top center fixed;
 	 -webkit-background-size: cover;
 	 -moz-background-size: cover;
 	 -o-background-size: cover;
@@ -36,7 +36,7 @@
 }
 
 #page5 {
-	background: url(../images/project/bg.jpg) no-repeat center center fixed;
+	background: url(../images/project/bg4.jpg) no-repeat top center fixed;
 	 -webkit-background-size: cover;
 	 -moz-background-size: cover;
 	 -o-background-size: cover;
@@ -44,7 +44,7 @@
 }
 
 #page6 {
-	background: url(../images/project/bg4.jpg) no-repeat center center fixed;
+	background: url(../images/project/bg5.jpg) no-repeat top center fixed;
 	 -webkit-background-size: cover;
 	 -moz-background-size: cover;
 	 -o-background-size: cover;
@@ -205,7 +205,7 @@
 		>Desktop
 	*/
 
-	#page1 {
+	/*#page1 {
 		background: url(../images/project/bg.jpg) no-repeat center center fixed; 
 		 -webkit-background-size: cover;
 		 -moz-background-size: cover;
@@ -333,10 +333,6 @@
 		background-image:url('../images/slide/kiosk1.jpg');
 	}
 
-	/*#frame_21 {
-		background-image:url('../images/slide/kiosk2.jpg');
-	}*/
-
 	#frame_22 {
 		background-image:url('../images/slide/kiosk3.jpg');
 	}
@@ -399,5 +395,5 @@
 
 	#frame_37 {
 		background-image:url('../images/slide/bags1.jpg');
-	}
+	}*/
 }
