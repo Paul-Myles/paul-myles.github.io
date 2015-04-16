@@ -1,4 +1,31 @@
-/* Background ../images */
+/* 
+	Background Images 
+*/
+
+#page1 {
+	background-image:url('../images/project/bg.jpg');
+}
+
+#page2 {
+	background-image:url('../images/project/bg3.jpg');
+}
+
+#page3 {
+	background-image:url('../images/project/bg2.jpg');
+}
+
+#page4 {
+	background-image:url('../images/project/bg4.jpg');
+}
+
+#page5 {
+	background-image:url('../images/project/bg6.jpg');
+}
+
+#page6 {
+	background-image:url('../images/project/bg5.jpg');
+}
+
 #frame_1 {
 	background-image:url('../images/slide/setup.jpg');
 }
