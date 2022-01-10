@@ -30,7 +30,7 @@ const HomePageStyle = css`
     max-width: 540px;
   }
 
-  .resume-link {
+  .resume-homepage-link {
     color: #315a69;
     font-weight: 700;
     border: 2px solid #f1e4b9;
@@ -59,7 +59,7 @@ const HomePage = () => {
       <h2>Paul Myles</h2>
       <h3>I build things for the web.</h3>
       <p>I'm a front end developer specializing in building exceptional digital experiences.</p>
-      <a className="resume-link" href="/resume.pdf" rel="noopener noreferrer" target="_blank">Check out my Resume</a>
+      <a className="resume-homepage-link" href="/resume.pdf" rel="noopener noreferrer" target="_blank">Check out my Resume</a>
     </section>
   );
 };

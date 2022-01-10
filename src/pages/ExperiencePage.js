@@ -6,6 +6,15 @@ const ExperiencePageStyle = css`
   padding-bottom: 10rem;
 }
 
+ul {
+  list-style-type: circle;
+  padding-left: 20px;
+  & > li {
+    line-height: 1.1;
+    padding: 10px 0 20px;
+  }
+}
+
 .timeline {
   position: relative;
   max-width: 1200px;
@@ -17,7 +26,7 @@ const ExperiencePageStyle = css`
     width: 6px;
     background-color: #f1e4b9;
     top: 15px;
-    bottom: 10px;
+    bottom: 0;
     left: 50%;
     margin-left: -3px;
   }
@@ -124,25 +133,41 @@ const ExperiencePage = () => {
         <div className="container left">
           <div className="content">
             <h1>Jimmy Joy</h1>
-            <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+            <ul>
+              <li>Developed and maintained a custom Shopify Theme using Shopify's Liquid templating language</li>
+              <li>Managed all companied stores across different languages</li>
+              <li>Collaborated with designers to incorporate UX design principles</li>
+            </ul>
           </div>
         </div>
         <div className="container right">
           <div className="content">
             <h1>Millienium Group</h1>
-            <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+            <ul>
+              <li>Managed and maintained the companies existing websites</li>
+              <li>Worked with new technologies such as .NET and Magento</li>
+              <li>Clients included Pacificomm, Digital Mobile, Utilise Energy and more</li>
+            </ul>
           </div>
         </div>
         <div className="container left">
           <div className="content">
             <h1>DDB Group</h1>
-            <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+            <ul>
+              <li>Developed and maintained code for in-house and client websites primarily using HTML, CSS, PHP, JavaScript, and jQuery</li>
+              <li>Manually tested sites in various browsers and mobile devices to ensure cross-browser compatibility and responsiveness</li>
+              <li>Clients included Volkswagen, McDonalds, Westpac, Cadbury, and more</li>
+            </ul>
           </div>
         </div>
         <div className="container right">
           <div className="content">
             <h1>Yoobee</h1>
-            <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+            <ul>
+              <li>Completed a Diploma of Web development</li>
+              <li>Learned the fundamentals of Web Development</li>
+              <li>Technologies that were learnt are HTML, CSS JavaScript and PHP </li>
+            </ul>
           </div>
         </div>
       </div>
