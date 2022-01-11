@@ -74,8 +74,8 @@ const WorkPage = () => {
                   <div className="folder"><Folder /></div>
                   <div className="ext-link"><ExtLink /></div>
                 </div>
-                <h3 className="project-title">Title</h3>
-                <div className="project-description"><p>description</p></div>
+                <h3 className="project-title">API</h3>
+                <div className="project-description"><p>Weather app using OpenWeather API</p></div>
               </header>
               <footer></footer>
             </div>
@@ -89,8 +89,8 @@ const WorkPage = () => {
                   <div className="folder"><Folder /></div>
                   <div className="ext-link"><ExtLink /></div>
                 </div>
-                <h3 className="project-title">Title</h3>
-                <div className="project-description"><p>description</p></div>
+                <h3 className="project-title">Sanity</h3>
+                <div className="project-description"><p>Blog using Sanity</p></div>
               </header>
               <footer></footer>
             </div>
