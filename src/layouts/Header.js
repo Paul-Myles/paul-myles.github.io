@@ -1,6 +1,7 @@
 import React, { useState }from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
+import { ReactComponent as Logo } from '../assets/logo.svg';
 import { css } from '@emotion/react';
 import media from '../styles/media';
 
@@ -62,9 +63,11 @@ const headerStyle = () => css`
     }
   }
 
-  .svg-color {
-    ${media.small} {
-      fill: #315a69;
+  .logo {
+    .logo_svg__g {
+      ${media.small} {
+        fill: #315a69;
+      }
     }
   }
 
@@ -183,43 +186,6 @@ const headerStyle = () => css`
   }
 `;
 
-// The debounce function receives our function as a parameter
-const debounce = (fn) => {
-
-  // This holds the requestAnimationFrame reference, so we can cancel it if we wish
-  let frame;
-
-  // The debounce function returns a new function that can receive a variable number of arguments
-  return (...params) => {
-    
-    // If the frame variable has been defined, clear it now, and queue for next frame
-    if (frame) { 
-      cancelAnimationFrame(frame);
-    }
-
-    // Queue our function call for the next frame
-    frame = requestAnimationFrame(() => {
-      
-      // Call our function and pass any params we received
-      fn(...params);
-    });
-
-  } 
-};
-
-
-// Reads out the scroll position and stores it in the data attribute
-// so we can use it in our stylesheets
-const storeScroll = () => {
-  document.documentElement.dataset.scroll = window.scrollY;
-}
-
-// Listen for new scroll events, here we debounce our `storeScroll` function
-document.addEventListener('scroll', debounce(storeScroll), { passive: true });
-
-// Update scroll position for first time
-storeScroll();
-
 const Header = () => {
   const { pathname } = useLocation();
 
@@ -232,26 +198,8 @@ const Header = () => {
     <header className="fixed-header" css={[headerStyle()]}>
       <nav role="navigation">
         <div className="logo">
-          <Link to="" replace={pathname === '/'}>
-            <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
-            width="35pt" height="35pt" viewBox="0 0 348.000000 348.000000"
-            preserveAspectRatio="xMidYMid meet">
-              <g className="svg-color" transform="translate(0.000000,348.000000) scale(0.100000,-0.100000)"
-              fill="#f1e4b9" stroke="none">
-              <path d="M1040 2940 l-705 -408 0 -822 0 -822 700 -404 c385 -222 707 -404
-              716 -404 9 0 331 182 715 403 l699 404 0 823 0 823 -700 405 c-385 222 -704
-              406 -710 407 -5 2 -327 -180 -715 -405z m1310 -205 c468 -277 568 -340 583
-              -367 16 -31 17 -77 15 -675 -3 -634 -3 -642 -24 -670 -30 -40 -85 -57 -127
-              -39 -18 7 -41 23 -52 36 -19 21 -20 40 -25 561 l-5 539 -427 -237 -427 -238
-              -3 -618 -3 -619 -33 -29 c-58 -52 -149 -33 -178 38 -11 26 -14 148 -14 631 l0
-              598 -417 234 c-229 129 -420 237 -425 238 -4 2 -8 -235 -8 -528 0 -571 0 -572
-              -52 -597 -60 -29 -115 -19 -148 26 -20 29 -20 41 -20 685 l0 656 29 32 c26 29
-              35 33 78 33 44 -1 86 -22 503 -258 l455 -257 5 543 c4 409 8 547 18 564 19 35
-              53 53 97 53 35 0 116 -45 605 -335z"/>
-              <path d="M1860 2335 c0 -270 4 -425 10 -423 21 7 729 403 729 408 0 3 -147 92
-              -327 198 -180 105 -346 204 -369 218 l-43 25 0 -426z"/>
-              </g>
-            </svg>
+          <Link to="/" replace={pathname === '/'}>
+            <Logo className="logo" />
           </Link>
         </div>
         <div className="nav-item">

@@ -9,10 +9,11 @@ const AboutPageStyle = css`
   }
 
   .inner {
-    @media (min-width: 1024px) {
-      display: grid;
-      grid-template-columns: 2fr 2fr;
-      gap: 50px;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    gap: 0 50px;
+    ${media.small} {
+      grid-template-columns: auto;
     }
   }
 

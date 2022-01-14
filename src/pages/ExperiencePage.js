@@ -133,6 +133,7 @@ const ExperiencePage = () => {
         <div className="container left">
           <div className="content">
             <h1>Jimmy Joy</h1>
+            <p>2016-2020</p>
             <ul>
               <li>Developed and maintained a custom Shopify Theme using Shopify's Liquid templating language</li>
               <li>Managed all companied stores across different languages</li>
@@ -143,6 +144,7 @@ const ExperiencePage = () => {
         <div className="container right">
           <div className="content">
             <h1>Millienium Group</h1>
+            <p>2014-2016</p>
             <ul>
               <li>Managed and maintained the companies existing websites</li>
               <li>Worked with new technologies such as .NET and Magento</li>
@@ -153,6 +155,7 @@ const ExperiencePage = () => {
         <div className="container left">
           <div className="content">
             <h1>DDB Group</h1>
+            <p>2012-2014</p>
             <ul>
               <li>Developed and maintained code for in-house and client websites primarily using HTML, CSS, PHP, JavaScript, and jQuery</li>
               <li>Manually tested sites in various browsers and mobile devices to ensure cross-browser compatibility and responsiveness</li>
@@ -163,6 +166,7 @@ const ExperiencePage = () => {
         <div className="container right">
           <div className="content">
             <h1>Yoobee</h1>
+            <p>2012</p>
             <ul>
               <li>Completed a Diploma of Web development</li>
               <li>Learned the fundamentals of Web Development</li>

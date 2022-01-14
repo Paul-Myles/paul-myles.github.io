@@ -67,30 +67,30 @@ const WorkPage = () => {
           </a>
         </li>
         <li>
-          <a href="" target="_blank">
+          <a href="https://dreamy-colden-d54f7e.netlify.app/" target="_blank">
             <div className="project-inner">
               <header>
                 <div className="project-top">
                   <div className="folder"><Folder /></div>
                   <div className="ext-link"><ExtLink /></div>
                 </div>
-                <h3 className="project-title">API</h3>
-                <div className="project-description"><p>Weather app using OpenWeather API</p></div>
+                <h3 className="project-title">Weather App</h3>
+                <div className="project-description"><p>Weather app built using OpenWeather API and Netlify</p></div>
               </header>
               <footer></footer>
             </div>
           </a>
         </li>
         <li>
-          <a href="" target="_blank">
+          <a href="https://inspiring-franklin-28f999.netlify.app/" target="_blank">
             <div className="project-inner">
               <header>
                 <div className="project-top">
                   <div className="folder"><Folder /></div>
                   <div className="ext-link"><ExtLink /></div>
                 </div>
-                <h3 className="project-title">Sanity</h3>
-                <div className="project-description"><p>Blog using Sanity</p></div>
+                <h3 className="project-title">Budget App</h3>
+                <div className="project-description"><p>React budget app using a custom hook for localStorage</p></div>
               </header>
               <footer></footer>
             </div>
