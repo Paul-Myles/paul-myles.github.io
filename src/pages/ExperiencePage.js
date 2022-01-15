@@ -1,4 +1,5 @@
 import React from 'react';
+import media from '../styles/media';
 import { css } from '@emotion/react';
 
 const ExperiencePageStyle = css`
@@ -12,6 +13,10 @@ ul {
   & > li {
     line-height: 1.1;
     padding: 10px 0 20px;
+    ${media.small} {
+      font-size: 12px;
+      padding: 7px 0;
+    }
   }
 }
 

@@ -1,8 +1,12 @@
 import React from 'react';
+import media from '../styles/media';
 import { css } from '@emotion/react';
 
 const ContactPageStyle = css`
   min-height: 450px;
+  ${media.small} {
+    min-height: 300px;
+  }
 
   .email-link {
     color: #315a69;
@@ -22,6 +26,10 @@ const ContactPageStyle = css`
       border: 2px solid #f1e4b9;
       color: #f1e4b9;
       background-color: #315a69;
+    }
+    ${media.small} {
+      padding: 0.55em;
+      width: 160px;
     }
   }
 `;

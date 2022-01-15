@@ -1,4 +1,5 @@
 import React from 'react';
+import media from '../styles/media';
 import { css } from '@emotion/react';
 
 const HomePageStyle = css`
@@ -48,6 +49,10 @@ const HomePageStyle = css`
       border: 2px solid #f1e4b9;
       color: #f1e4b9;
       background-color: #315a69;
+    }
+    ${media.small} {
+      padding: 0.75em 0.55em;
+      width: 220px;
     }
   }
 `;

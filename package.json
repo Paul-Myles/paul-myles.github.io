@@ -4,7 +4,7 @@
   "description": "My React Single Page App without CRA",
   "main": "src/index.js",
   "hompage": "https://paul-myles.github.io/",
-  "repository": "https://github.com/Paul-Myles/react-site",
+  "repository": "https://github.com/Paul-Myles/paul-myles.github.io",
   "author": "Paul Myles <pmyles86@gmail.com>",
   "license": "MIT",
   "engines": {
@@ -12,12 +12,12 @@
     "npm": ">=6"
   },
   "bugs": {
-    "url": "https://github.com/Paul-Myles/react-site/issues",
+    "url": "https://github.com/Paul-Myles/paul-myles.github.io/issues",
     "email": "pmyles86@gmail.com"
   },
   "scripts": {
     "start": "NODE_ENV=development webpack serve --progress",
-    "build": "NODE_ENV=production webpack",
+    "build": "NODE_ENV=production",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
     "lint": "eslint src"
