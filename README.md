@@ -1,4 +1,4 @@
-<h1 align="center">🎉 React SPA Template 🎉</h1>
+<h1 align="center">🎉 My React Portfolio 🎉</h1>
 
 <p align="center">  
   <img src="https://img.shields.io/github/license/ofnullable/react-spa-template" />
@@ -15,16 +15,16 @@
 
 ## Live demo
 
-[https://ofnullable.github.io/react-spa-template](https://ofnullable.github.io/react-spa-template)
+[https://paul-myles.github.io/react-site](https://paul-myles.github.io/react-site)
 
 ## Installation
 
 ```shell
 # clone this repository
-$ git clone https://github.com/ofnullable/react-spa-template
+$ git clone https://paul-myles.github.io/react-site
 
 # go into template directory
-$ cd react-spa-template
+$ cd react-site
 
 # install dependencies
 $ npm install
