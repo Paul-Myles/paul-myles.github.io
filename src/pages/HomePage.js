@@ -64,7 +64,7 @@ const HomePage = () => {
       <h2>Paul Myles</h2>
       <h3>I build things for the web.</h3>
       <p>I'm a front end developer specializing in building exceptional digital experiences.</p>
-      <a className="resume-homepage-link" href="resume.pdf" rel="noopener noreferrer" target="_blank">Check out my Resume</a>
+      <a className="resume-homepage-link" href="/resume.pdf" rel="noopener noreferrer" target="_blank">Check out my Resume</a>
     </section>
   );
 };
