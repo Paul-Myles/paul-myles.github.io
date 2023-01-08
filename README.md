@@ -15,7 +15,7 @@
 
 ## Live demo
 
-[https://paul-myles.github.io/react-site](https://paul-myles.github.io/react-site)
+[https://paul-myles.github.io/]
 
 ## Installation
 
